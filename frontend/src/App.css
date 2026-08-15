@@ -1,0 +1,226 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f5f7;
+    color: #222;
+}
+
+button,
+input,
+textarea,
+select {
+    font: inherit;
+}
+
+button {
+    cursor: pointer;
+}
+
+header {
+    background: white;
+    padding: 20px 30px;
+    border-bottom: 1px solid #ddd;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header p {
+    margin: 5px 0;
+    color: #666;
+}
+
+header button {
+    background: #222;
+    color: white;
+    border: 0;
+    padding: 10px 16px;
+    border-radius: 6px;
+}
+
+.filters {
+    padding: 20px 30px;
+    display: flex;
+    gap: 10px;
+}
+
+.filters input,
+.filters select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+.filters input {
+    width: 280px;
+}
+
+main {
+    display: flex;
+    gap: 20px;
+    padding: 0 30px 30px;
+    overflow-x: auto;
+}
+
+.column {
+    background: #e5e7eb;
+    width: 320px;
+    min-width: 320px;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.column-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.column-title h2 {
+    margin: 0 0 15px;
+}
+
+.column-title span {
+    background: white;
+    padding: 5px 10px;
+    border-radius: 20px;
+}
+
+.task {
+    background: white;
+    padding: 15px;
+    margin-bottom: 12px;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px #ccc;
+}
+
+.task h3 {
+    margin-top: 0;
+}
+
+.task p {
+    color: #666;
+}
+
+.task select {
+    width: 100%;
+    margin-top: 10px;
+    padding: 7px;
+}
+
+.priority {
+    display: inline-block;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.high {
+    background: #f8d7da;
+}
+
+.medium {
+    background: #fff3cd;
+}
+
+.low {
+    background: #d8f3dc;
+}
+
+.actions {
+    display: flex;
+    gap: 8px;
+    margin-top: 12px;
+}
+
+.actions button {
+    padding: 6px 10px;
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.modal {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form {
+    background: white;
+    width: 420px;
+    max-width: 90%;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+.form form {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.form input,
+.form textarea,
+.form select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form textarea {
+    min-height: 90px;
+}
+
+.form-buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.error {
+    margin: 15px 30px;
+    padding: 12px;
+    background: #f8d7da;
+    color: #842029;
+    border-radius: 6px;
+}
+
+.center {
+    text-align: center;
+    margin-top: 100px;
+}
+
+@media (max-width: 600px) {
+    header {
+        padding: 15px;
+    }
+
+    main {
+        padding: 0 15px 20px;
+    }
+
+    .filters {
+        padding: 15px;
+        flex-direction: column;
+    }
+
+    .filters input {
+        width: 100%;
+    }
+}
